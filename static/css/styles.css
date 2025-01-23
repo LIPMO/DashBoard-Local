@@ -1,0 +1,81 @@
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.link-item {
+    background-color: #2c2c3c;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.link-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.link-item a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.edit-button,
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.edit-button:hover,
+.back-button:hover {
+    background-color: #e67e22;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.delete-link {
+    color: #e74c3c;
+    text-decoration: none;
+}
