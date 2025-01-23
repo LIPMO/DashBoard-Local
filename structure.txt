@@ -1,0 +1,13 @@
+Horizon/
+├── app.py
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── scripts.js
+│   └── images/
+│       └── default-icon.png
+├── templates/
+│   ├── edit.html
+│   └── display.html
+└── README.md
