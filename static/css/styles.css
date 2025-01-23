@@ -155,3 +155,55 @@ form button:hover {
 .link-item:hover {
     transform: scale(1.05);
 }
+
+.links-grid {
+    display: flex; /* Utilisation de Flexbox */
+    flex-wrap: wrap; /* Permet le retour à la ligne après 4 éléments */
+    justify-content: flex-end; /* Alignement à droite */
+    gap: 15px; /* Espacement entre les éléments */
+    max-width: 80%; /* Évite que ça prenne toute la largeur */
+}
+
+.link-item {
+    width: calc(25% - 15px); /* 4 éléments par ligne */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link-item img {
+    width: 40px; /* Taille de l'icône */
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.link-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Animation au survol */
+.link-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive pour écrans plus petits */
+@media (max-width: 768px) {
+    .link-item {
+        width: calc(50% - 15px); /* 2 éléments par ligne sur mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .link-item {
+        width: 100%; /* 1 élément par ligne sur petits écrans */
+    }
+}
