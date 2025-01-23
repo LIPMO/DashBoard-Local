@@ -79,3 +79,14 @@ form input, form button {
     color: #e74c3c;
     text-decoration: none;
 }
+
+.link-item {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.link-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
