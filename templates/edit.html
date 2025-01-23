@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Links</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Links</h1>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Application Name" required>
+            <input type="url" name="url" placeholder="Application URL" required>
+            <input type="url" name="icon" placeholder="Icon URL (optional)">
+            <button type="submit">Add Link</button>
+        </form>
+        <ul class="links-list">
+            {% for link in links %}
+            <li>
+                {{ link.name }} - <a href="{{ link.url }}" target="_blank">{{ link.url }}</a>
+                <a class="delete-link" href="/delete/{{ loop.index0 }}">Delete</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a class="back-button" href="/">Back to Links</a>
+    </div>
+</body>
+</html>
