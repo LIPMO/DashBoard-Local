@@ -147,3 +147,11 @@ form button:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
+.link-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.link-item:hover {
+    transform: scale(1.05);
+}
