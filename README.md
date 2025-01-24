@@ -1,4 +1,4 @@
-# 🚀 DashBoard-Local  
+# 🚀 DashBoard-hz
 
 **DashBoard-Local** est un tableau de bord auto-hébergé qui vous permet de centraliser vos applications locales et liens préférés dans une interface moderne et personnalisable. Inspiré du style iOS dark, il offre une expérience fluide et intuitive.  
 
@@ -19,7 +19,7 @@
 
 ### 🔹 2. Cloner le dépôt  
 ```bash
-git clone https://github.com/LIPMO/DashBoard-Local.git
+git clone https://github.com/LIPMO/DashBoard-hz.git
 cd DashBoard-Local
 ```
 
